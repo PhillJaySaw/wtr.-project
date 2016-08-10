@@ -1,6 +1,6 @@
 /*        COLOR PALETTE
 
-  > background/text/nav  #F5F5F5
+  > background/text/nav  #F9F9F9
   > background/accent #1762DC
   > background/accent #6E9EE9
   > text/footer #222222
@@ -16,7 +16,7 @@ body {
 /* ----- NAV ----- */
 
 nav {
-  background: #F5F5F5;
+  background: #F9F9F9;
   padding: .7em;
   box-shadow: 0px 2px 7px 3px rgba(0, 0, 0, 0.4);
   z-index: 9999;
@@ -102,7 +102,7 @@ section#main {
   margin: .7em 0;
   transition: all 300ms;
   font-weight: 400;
-  color: #F5F5F5;
+  color: #F9F9F9;
   background: #1762DC;
   box-shadow: 0px 10px 10px -5px rgba(0,0,0,.4);
 }
@@ -115,7 +115,7 @@ section#main {
 /* ----- ABOUT ----- */
 
 section#about {
-  background: #F5F5F5;
+  background: #F9F9F9;
   padding: 6em 7em;
   text-align: center;
   position: relative;
@@ -157,50 +157,47 @@ section#about {
 
 /* ----- ABOUT SUBSECTION ----- */
 
-section#subAbout {
-  background: #1762DC;
-  color: #F5F5F5;
-  padding: 5em 28%;
-}
-
-.wrapper:after {
+#subAbout .wrapper:after {
   content: "";
-  display: block;
+  display: table;             /* CLEAR FIX */
   clear: both;
 }
 
-#subAbout div.wrapper div {
+section#subAbout {
+  background: #1762DC;
+  color: #F9F9F9;
+  padding: 4em;
+}
+
+#subAbout .wrapper {
+  width: 850px;
+  margin: 0 auto;
+}
+
+#subAbout .left {
   float: left;
 }
 
-#subAbout h1 {
-  font-size: 2.5em;
-  margin-bottom: 1em;
+#subAbout h2 {
+  margin: 0 0 .7em 0;
 }
 
 #subAbout p {
-  width: 400px;
-  line-height: 1.1em;
-  letter-spacing: .1em;
+  width: 500px;
+  line-height: 1.5;
+  letter-spacing: .09em;
   font-weight: 300;
-  text-align: left;
-}
-
-#subAbout img {
-  float: right;
-  height: 200px;
-  width: auto;
 }
 
 #subAbout a {
-  color: #F5F5F5;
+  color: #F9F9F9;
   text-decoration: none;
   background: #6E9EE9;
   padding: .8em 1.2em;
   box-shadow: 0px 10px 10px -5px rgba(0,0,0,.4);
   transition: all 300ms;
-  margin-top: 3em;
-  float: left;
+  display: inline-block;
+  margin-top: 2em;
 }
 
 #subAbout a:hover {
@@ -208,6 +205,24 @@ section#subAbout {
   transform: translate(0px, -10px) scale(1.1);
 }
 
+#subAbout img {
+  width: 200px;
+  height: auto;
+  float: right;
+}
+
 
 
 /* ----- PRODUCTS ----- */
+
+#products {
+  text-align: center;
+  padding: 6em 7em;
+  background: #F9F9F9;
+}
+
+#products h1 {
+  color: #222222;
+  font-size: 4em;
+  font-weight: 300;
+}
